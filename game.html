@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Победи монстра</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="gamestyle.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="capture" >"Победи Монстра"</h1>
+    <button class="desc_btn">
+      Развернуть описание
+    </button>
+      <p class="description">
+        Мини игра "Минг Бонг". Восстал монстр Минг Бонг! Храбрые борцы с монстрами спешат на помощь! Изначально, Минг Бонг имеет 50 единиц здоровья. Каждый ход игры Минг Бонг выпивает магическое зелье, которые ему поставляет в неограниченном количестве злая колдунья Сардулья. Оно восстанавливает ему некое количество здоровья (вводит пользователь). Затем, борцы с монстрами поливают его из антимонстропушкаруса, и это снимает ему некое количество здоровья (тоже вводит пользователь, каждый раз заново на каждом ходу). Затем, начинается новый ход. Если в любой миг здоровье Минг Бонга превысит 100, то он поработит мир. Если в любой миг здоровье Минг Бонга упадет ниже 0, то он умирает, а Сардулья отправляется в тюрьму для злых колдуний.
+      </p>
+    <div id="block_card">
+      <div class="game_card">
+        <div id="hunter_health"></div>
+        <img id="img_hunter" class="game_card_img">
+        <p id="hunter_txt"></p>
+
+      </div>
+      <div class="game_card">
+        <div id="monster_health" class="game_card__health"></div>
+        <img id="img_monster" class="game_card_img">
+        <p id="monster_txt"></p>
+      </div>
+      <div class="game_card">
+        <p class="status_witch">
+          На свободе
+        </p>
+        <img id="img_witch" class="game_card_img">
+        <p id="witch_txt"></p>
+      </div>
+    </div>
+
+    <div class="block_control">
+      <input type="text" id="attack_or_healing" readonly>
+      <button class="start_btn">
+        Начать!
+      </button>
+    </div>
+  </div>
+<script type="text/javascript" src='gamejscript.js'></script>
+</body>
+</html>

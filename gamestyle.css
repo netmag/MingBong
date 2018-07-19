@@ -1,0 +1,248 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	width: 96%;
+	margin: 0 auto;
+}
+.capture {
+	margin: 10px 0;
+	text-align: center;
+}
+.desc_btn {
+	margin: 0 auto;
+  display: inherit;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 30px;
+  border: 1px solid #C4C1C1;
+	border-radius: 5px;
+	box-shadow: 0 4px 6px;
+}
+.description {
+	font-size: 18px;
+  text-align: justify;
+  display: none;
+  overflow: hidden;
+}
+#block_card {
+	width: 100%;
+	display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.game_card {
+	width: 100px;
+	border: 1px solid #C4C1C1;
+	box-shadow: 0 4px 6px;
+  border-radius: 5px;
+}
+#hunter_health {
+  margin-top: 32px;
+}
+#hunter_txt, #monster_txt, #witch_txt {
+	font-weight: 700;
+	text-align: center;
+	font-size: 7px;
+  width: 100%;
+  height: 30px;
+}
+.game_card_img {
+	width: 100px;
+	height: 100px;
+}
+#img_hunter, #img_witch, #img_monster {
+	background-position: 0px 0;
+	background-size: cover;
+}
+.status_witch {
+	text-align: center;
+  line-height: 32px;
+}
+#img_hunter {
+	background-image: url(img/hunter-2.png);
+}
+#img_monster {
+	background-image: url(img/monster-2.png);
+}
+#img_witch {
+	background-image: url(img/witch-2.png);
+}
+.game_card__health{
+	margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 95px;
+	height: 20px;
+	border: 1px solid #C4C1C1;
+	border-radius: 5px;
+	background-image: url(img/health.jpg);
+  background-repeat: no-repeat;
+}
+.block_control {
+	width: 100%;
+}
+.start_btn {
+	width: 130px;
+  height: 40px;
+  display: inherit;
+  margin: 0 auto;
+	border: 1px solid #C4C1C1;
+	border-radius: 5px;
+	box-shadow: 0 4px 6px;
+}
+#button p {
+	display: inline-block;
+	width: 100%;
+  margin-top: 15px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+  line-height: 22px;
+}
+.start_btn:hover {
+	cursor: pointer;
+}
+.start_btn:active {
+	margin: 0 auto;
+	box-shadow: 0 2px 6px;
+}
+#attack_or_healing {
+	width: 165px;
+	height: 24px;
+	text-align: center;
+	font-size: 20px;
+	display: inherit;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: #ac9a9a;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .capture {
+    margin: 15px 0;
+  }
+  .desc_btn {
+    font-size: 16px;
+    width: 170px;
+  }
+  .description {
+    margin-bottom: 10px;
+  }
+  .game_card {
+    width: 175px;
+  }
+  .game_card_img {
+    width: 175px;
+    height: 175px;
+  }
+  #hunter_txt, #monster_txt, #witch_txt {
+    font-size: 14px;
+    height: 65px;
+  }
+  .game_card__health {
+    width: 155px;
+  }
+  .start_btn {
+    font-size: 16px;
+  }
+}
+
+/* Небольшие устройства (планшеты, 768px и выше) sm */
+@media (min-width: 768px) {
+  .capture {
+    margin: 20px 0;
+  }
+  .desc_btn {
+    font-size: 16px;
+    width: 170px;
+  }
+  .description {
+    margin-bottom: 10px;
+  }
+  .game_card {
+    width: 235px;
+  }
+  #hunter_txt, #monster_txt, #witch_txt {
+    font-size: 16px;
+    height: 65px;
+  }
+  .game_card_img {
+    width: 235px;
+    height: 235px;
+  }
+  .game_card__health {
+    width: 155px;
+  }
+}
+
+/* Средние устройства (настольных компьютеров, 992px и выше) md */
+@media (min-width: 992px) {
+  .capture {
+    margin: 25px 0;
+  }
+  .desc_btn {
+    font-size: 16px;
+    width: 200px;
+  }
+  .description {
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+  .game_card {
+    width: 305px;
+  }
+  .game_card_img {
+    width: 305px;
+    height: 305px;
+  }
+  #hunter_txt, #monster_txt, #witch_txt {
+    font-size: 18px;
+    height: 65px;
+  }
+  .game_card__health {
+    width: 160px;
+  }
+  .start_btn {
+    font-size: 16px;
+  }
+}
+
+/* Большие устройства (большие компьютеры, 1200px и выше) lg */
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+  .capture {
+    margin: 30px 0;
+    font-size: 46px;
+  }
+  .desc_btn {
+    font-size: 18px;
+    width: 200px;
+    margin-bottom: 35px;
+  }
+  .description {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  .game_card {
+    width: 380px;
+  }
+  .game_card_img {
+    width: 380px;
+    height: 380px;
+  }
+  #hunter_txt, #monster_txt, #witch_txt {
+    font-size: 18px;
+    height: 65px;
+  }
+  .game_card__health {
+    width: 300px;
+  }
+  .start_btn {
+    font-size: 20px;
+  }
+}
